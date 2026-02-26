@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rama Wijaya | Wedding Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <!-- LOGO IMAGE -->
+        <div class="logo">
+          <img src="assets/logo/LOGO.png" alt="Logo" />
+        </div>
+
+        <!-- HAMBURGER -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- FULLSCREEN NAV -->
+    <div class="fullscreen-nav" id="fullscreenNav">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#pricelist">Pricelist</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Capturing Moments,<br />Creating Stories.</h1>
+        <p>
+          Professional Photography for Wedding, Metatah, Sport, Music &
+          Hospitality.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn-primary">View Portfolio</a>
+          <a href="#pricelist" class="btn-outline">See Pricelist</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+      <h1>Beberapa Acara yang kami Dokumentasikan</h1>
+      <div class="portfolio-wrapper">
+        <!-- LEFT 30% -->
+        <div class="portfolio-left">
+          <ul>
+            <li class="active" data-category="wedding">Wedding</li>
+            <li data-category="metatah">Metatah</li>
+            <li data-category="otonan">Otonan</li>
+            <li data-category="Ngaben">Ngaben</li>
+            <li data-category="Wisuda">Wisuda</li>
+          </ul>
+        </div>
+
+        <!-- RIGHT 70% -->
+        <div class="portfolio-right">
+          <!-- GRID SLIDER (SAMA SEPERTI SEBELUMNYA) -->
+          <div class="slider-container">
+            <div class="slide active" data-category="wedding">
+              <div class="grid"></div>
+            </div>
+
+            <div class="slide" data-category="metatah">
+              <div class="grid"></div>
+            </div>
+
+            <div class="slide" data-category="otonan">
+              <div class="grid"></div>
+            </div>
+
+            <div class="slide" data-category="ngaben">
+              <div class="grid"></div>
+            </div>
+
+            <div class="slide" data-category="wisuda">
+              <div class="grid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination"></div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricelist" class="pricelist">
+      <div class="price-wrapper">
+        <!-- TOP CATEGORY (10%) -->
+        <div class="price-category">
+          <button class="price-btn active" data-category="wedding">
+            Wedding
+          </button>
+          <button class="price-btn" data-category="metatah">Metatah</button>
+          <button class="price-btn" data-category="sport">Sport</button>
+          <button class="price-btn" data-category="music">Music</button>
+          <button class="price-btn" data-category="hotel">Hotel</button>
+        </div>
+
+        <!-- BOTTOM CONTENT (90%) -->
+        <div class="price-content">
+          <!-- WEDDING -->
+          <div class="price-group active" data-category="wedding">
+            <div class="price-card">
+              <h3>Silver Wedding</h3>
+              <p>4 Hours Coverage</p>
+              <span>5.000.000 IDR</span>
+            </div>
+
+            <div class="price-card highlight">
+              <h3>Gold Wedding</h3>
+              <p>8 Hours + Album</p>
+              <span>8.500.000 IDR</span>
+            </div>
+
+            <div class="price-card">
+              <h3>Luxury Wedding</h3>
+              <p>Full Day + 2 Photographer</p>
+              <span>12.000.000 IDR</span>
+            </div>
+          </div>
+
+          <!-- METATAH -->
+          <div class="price-group" data-category="metatah">
+            <div class="price-card">
+              <h3>Metatah Basic</h3>
+              <p>3 Hours Coverage</p>
+              <span>3.500.000 IDR</span>
+            </div>
+          </div>
+
+          <!-- SPORT -->
+          <div class="price-group" data-category="sport">
+            <div class="price-card">
+              <h3>Sport Event</h3>
+              <p>Half Day Coverage</p>
+              <span>4.000.000 IDR</span>
+            </div>
+          </div>
+
+          <!-- MUSIC -->
+          <div class="price-group" data-category="music">
+            <div class="price-card">
+              <h3>Concert Coverage</h3>
+              <p>Stage + Backstage</p>
+              <span>6.500.000 IDR</span>
+            </div>
+          </div>
+
+          <!-- HOTEL -->
+          <div class="price-group" data-category="hotel">
+            <div class="price-card">
+              <h3>Hotel Documentation</h3>
+              <p>Room + Facility Shoot</p>
+              <span>5.500.000 IDR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-container">
+        <h2>Let’s Create Beautiful Memories</h2>
+        <p>
+          Ready to capture your special moment? Let’s talk about your wedding
+          day.
+        </p>
+        <a href="https://wa.me/628xxxxxxxxxx" class="btn-gold">Book Now</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Rama Wijaya. All Rights Reserved.</p>
+    </footer>
+
+    <!-- IMAGE MODAL -->
+    <div id="imageModal" class="image-modal">
+      <span class="close-modal">&times;</span>
+      <img class="modal-content" id="modalImage" />
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
+  </body>
+</html>
