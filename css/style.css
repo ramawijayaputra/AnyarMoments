@@ -176,12 +176,18 @@ button {
 
 @media (max-width: 768px) {
   .nav-container {
-    padding: 12px 20px;
+    padding: 14px 20px;
     border-radius: 30px;
   }
 
   .logo img {
-    height: 48px;
+    height: 100px; /* sebelumnya 48px */
+    width: auto;
+  }
+
+  .hamburger {
+    width: 30px;
+    height: 22px;
   }
 
   .fullscreen-nav a {
@@ -189,27 +195,45 @@ button {
   }
 }
 
-/* HERO */
-/* ===============================
-   HERO SECTION
-================================= */
+/* =============================== */
+/* HERO PREMIUM VERSION */
+/* =============================== */
+
+/* ============================= */
+/* HERO LIGHT DYNAMIC + NOISE */
+/* ============================= */
 
 .hero {
+  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 0 20px;
-  position: relative;
   overflow: hidden;
-
-  background: linear-gradient(-45deg, #fdfbfb, #f3f6ff, #f8f9ff, #eef1ff);
-  background-size: 400% 400%;
-  animation: gradientMove 12s ease infinite;
+  background: #f7f8fc;
 }
 
-/* ANIMATED GRADIENT */
+/* BACKGROUND WRAPPER */
+.animated-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* MOVING SOFT GRADIENT */
+.gradient-layer {
+  position: absolute;
+  inset: -50%;
+  background: linear-gradient(45deg, #fdfbfb, #f6f7ff, #fef6e4, #f4f4ff);
+  background-size: 400% 400%;
+  animation: gradientMove 6s ease infinite;
+  opacity: 0.9;
+}
+
+/* GRADIENT FLOW */
 @keyframes gradientMove {
   0% {
     background-position: 0% 50%;
@@ -222,10 +246,81 @@ button {
   }
 }
 
-/* HERO CONTENT */
+/* FLOATING BLOBS */
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.5;
+  animation: blobMove 5s ease-in-out infinite alternate;
+}
+
+.blob-1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #d4af37, #f3e6c2);
+  top: -150px;
+  left: -100px;
+}
+
+.blob-2 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #c6d8ff, #eef2ff);
+  bottom: -200px;
+  right: -150px;
+  animation-delay: 2s;
+}
+
+/* FASTER FLOAT */
+@keyframes blobMove {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(50px, -50px) scale(1.1);
+  }
+  100% {
+    transform: translate(-30px, 30px) scale(0.95);
+  }
+}
+
+/* NOISE OVERLAY */
+.noise {
+  position: absolute;
+  inset: 0;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  opacity: 0.08;
+  mix-blend-mode: overlay;
+  animation: noiseMove 0.3s infinite;
+  pointer-events: none;
+}
+
+/* NOISE ANIMATION */
+@keyframes noiseMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-2%, 2%);
+  }
+  50% {
+    transform: translate(-1%, -1%);
+  }
+  75% {
+    transform: translate(2%, 1%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* CONTENT */
 .hero-content {
-  max-width: 900px;
+  position: relative;
   z-index: 2;
+  max-width: 900px;
 }
 
 .hero h1 {
@@ -240,59 +335,19 @@ button {
   font-size: 20px;
   color: #555;
   margin-bottom: 40px;
+  line-height: 1.7;
 }
 
-/* BUTTON WRAPPER */
-.hero-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-/* PRIMARY BUTTON */
-.btn-primary {
-  padding: 14px 32px;
-  border-radius: 40px;
-  background: #111;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s ease;
-}
-
-.btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-/* OUTLINE BUTTON */
-.btn-outline {
-  padding: 14px 32px;
-  border-radius: 40px;
-  border: 2px solid #111;
-  color: #111;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s ease;
-}
-
-.btn-outline:hover {
-  background: #111;
-  color: white;
-}
-
-/* ===============================
-   RESPONSIVE
-================================= */
-
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 38px;
+    font-size: 36px;
   }
-
   .hero p {
     font-size: 16px;
+  }
+  .blob {
+    filter: blur(70px);
   }
 }
 
