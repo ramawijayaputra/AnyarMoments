@@ -143,37 +143,28 @@ function renderGallery() {
   renderPagination(imagesPerPage);
 }
 
-const tabs = document.querySelectorAll(".category-scroll li");
-const indicator = document.querySelector(".tab-indicator");
+const scrollContainer = document.querySelector(".category-scroll");
+const progressBar = document.querySelector(".scroll-progress");
 
-function moveIndicator(element) {
-  const rect = element.getBoundingClientRect();
-  const parentRect = element.parentElement.getBoundingClientRect();
+if (scrollContainer && progressBar) {
+  function updateScrollProgress() {
+    const scrollWidth =
+      scrollContainer.scrollWidth - scrollContainer.clientWidth;
+    const scrollLeft = scrollContainer.scrollLeft;
 
-  indicator.style.width = rect.width + "px";
-  indicator.style.left = rect.left - parentRect.left + "px";
+    const scrollPercent = scrollLeft / scrollWidth;
+
+    const progressWidth =
+      scrollContainer.clientWidth / scrollContainer.scrollWidth;
+
+    progressBar.style.width = progressWidth * 100 + "%";
+    progressBar.style.transform = `translateX(${scrollPercent * 100}%)`;
+  }
+
+  scrollContainer.addEventListener("scroll", updateScrollProgress);
+  window.addEventListener("resize", updateScrollProgress);
+  window.addEventListener("load", updateScrollProgress);
 }
-
-tabs.forEach((tab) => {
-  tab.addEventListener("click", function () {
-    tabs.forEach((t) => t.classList.remove("active"));
-    this.classList.add("active");
-
-    moveIndicator(this);
-  });
-});
-
-/* Init on load */
-window.addEventListener("load", () => {
-  const activeTab = document.querySelector(".category-scroll li.active");
-  if (activeTab) moveIndicator(activeTab);
-});
-
-/* Update on resize */
-window.addEventListener("resize", () => {
-  const activeTab = document.querySelector(".category-scroll li.active");
-  if (activeTab) moveIndicator(activeTab);
-});
 
 /* ===============================
    PAGINATION
