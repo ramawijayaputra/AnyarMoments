@@ -56,12 +56,12 @@ const imageData = {
     "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293928/JOB03450_nvpjwd.jpg",
     "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293918/JOB03681_zj879i.jpg",
 
-    "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294429/49-JOB04712_p54lzb.jpg",
-    "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294422/3-JOB04447_hlzywa.jpg",
-    "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294422/52-JOB04729_eiv34v.jpg",
-    "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294422/47-JOB04683_gjxzj8.jpg",
-    "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294421/27-JOB04564_etstxp.jpg",
-    "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294419/64-JOB04810_tw0qow.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294429/49-JOB04712_p54lzb.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294422/3-JOB04447_hlzywa.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294422/52-JOB04729_eiv34v.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294422/47-JOB04683_gjxzj8.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294421/27-JOB04564_etstxp.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294419/64-JOB04810_tw0qow.jpg",
     "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294419/11-JOB04481_ek2zts.jpg",
     "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294416/59-JOB04780_naz35h.jpg",
     "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294315/58-JOB04769_qqknn1.jpg",
@@ -83,7 +83,18 @@ const imageData = {
     "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293652/35-JOB09580_e8bsrh.jpg",
   ],
 
-  wisuda: [],
+  wisuda: [
+    "https://res.cloudinary.com/dugp1yedh/image/f_auto,q_auto,w_1200/upload/v1772294940/65-JOB09015_vkezq7.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/f_auto,q_auto,w_1200/upload/v1772294935/19-JOB08474_iivzyl.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/f_auto,q_auto,w_1200/upload/v1772294934/2-JOB08317_le32xl.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/f_auto,q_auto,w_1200/upload/v1772294934/24-JOB08538_jrvg3l.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/f_auto,q_auto,w_1200/upload/v1772294932/23-JOB08533_mesmd3.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/f_auto,q_auto,w_1200/upload/v1772294933/67-JOB09031_wzfibu.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/f_auto,q_auto,w_1200/upload/v1772294932/9-JOB08367_mploqh.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/f_auto,q_auto,w_1200/upload/v1772294931/25-JOB08543_elk0io.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/f_auto,q_auto,w_1200/upload/v1772294929/60-JOB09000_bixr7v.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/f_auto,q_auto,w_1200/upload/v1772294928/26-JOB08573_drvhg0.jpg",
+  ],
 };
 
 /* ===============================
