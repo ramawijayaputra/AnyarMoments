@@ -143,6 +143,38 @@ function renderGallery() {
   renderPagination(imagesPerPage);
 }
 
+const tabs = document.querySelectorAll(".category-scroll li");
+const indicator = document.querySelector(".tab-indicator");
+
+function moveIndicator(element) {
+  const rect = element.getBoundingClientRect();
+  const parentRect = element.parentElement.getBoundingClientRect();
+
+  indicator.style.width = rect.width + "px";
+  indicator.style.left = rect.left - parentRect.left + "px";
+}
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", function () {
+    tabs.forEach((t) => t.classList.remove("active"));
+    this.classList.add("active");
+
+    moveIndicator(this);
+  });
+});
+
+/* Init on load */
+window.addEventListener("load", () => {
+  const activeTab = document.querySelector(".category-scroll li.active");
+  if (activeTab) moveIndicator(activeTab);
+});
+
+/* Update on resize */
+window.addEventListener("resize", () => {
+  const activeTab = document.querySelector(".category-scroll li.active");
+  if (activeTab) moveIndicator(activeTab);
+});
+
 /* ===============================
    PAGINATION
 ================================= */
