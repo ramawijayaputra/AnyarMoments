@@ -5,36 +5,85 @@ let currentCategory = "wedding";
 let currentPage = 1;
 
 /* ===============================
-   IMAGE DATA
+   IMAGE DATA WITH IMGUR URLS
 ================================= */
 const imageData = {
   wedding: [
-    "assets/images/wedding/1.jpg",
-    "assets/images/wedding/2.jpg",
-    "assets/images/wedding/3.jpg",
-    "assets/images/wedding/4.jpg",
-    "assets/images/wedding/5.jpg",
-    "assets/images/wedding/6.jpg",
-    "assets/images/wedding/7.jpg",
-    "assets/images/wedding/8.jpg",
-    "assets/images/wedding/9.jpg",
-    "assets/images/wedding/10.jpg",
-    "assets/images/wedding/10.jpg",
-    "assets/images/wedding/10.jpg",
-    "assets/images/wedding/10.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293206/28-JOB04697_qfkl3d.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293204/63-JOB04917_hkchnv.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293205/81-JOB05033_z6bjit.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293204/73-JOB06025_xgamo9.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293204/8-JOB04598_vjpes1.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293196/39-JOB04774_inujzf.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293202/56-JOB04876_y54wnx.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293204/70-JOB04972_hdoama.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293200/54-JOB04874_s0aahg.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293194/95-JOB05096_scckh3.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772290616/10-JOB05355_jwvxq5.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772292433/29-JOB05510_lkmhfz.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772292437/37-JOB05615_d6jyn6.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772292438/57-JOB05835_yh64kp.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772292440/49-JOB05759_gisvdm.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772292439/23-JOB05443_jkl0fx.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772292451/115-JOB06276_qvgmwy.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772292451/63-JOB05885_khhbgp.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772292455/179-JOB06854_w7ygz8.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772292454/159-JOB06702_waenw4.jpg",
+  ],
+
+  prewedding: [
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772292913/2-JOB08921_v6mckm.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772292913/30-JOB09833_r1cgmn.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772292914/4-JOB08953_m4zlew.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772292917/8-JOB09005_jidudi.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772292915/9-JOB09025_dgjvjm.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772292953/11-JOB09129_qp3atx.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772292973/14-JOB09192_ej3vme.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772292974/28-JOB09803_bkrode.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772292973/25-JOB09654_fxs1gp.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772292977/12-JOB09132_paisvm.jpg",
   ],
 
   metatah: [
-    "assets/images/metatah/1.jpg",
-    "assets/images/metatah/2.jpg",
-    "assets/images/metatah/3.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293958/JOB03607_g4lzel.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294182/JOB03811_jigdiw.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294182/JOB03558_mwz86l.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293954/JOB03623_fddkzu.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293951/JOB03950_qgwkzn.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293944/JOB03941_jvdc0u.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293947/JOB03736_itb1y8.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293933/JOB03761_kt4xfc.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293928/JOB03450_nvpjwd.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293918/JOB03681_zj879i.jpg",
+
+    "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294429/49-JOB04712_p54lzb.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294422/3-JOB04447_hlzywa.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294422/52-JOB04729_eiv34v.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294422/47-JOB04683_gjxzj8.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294421/27-JOB04564_etstxp.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294419/64-JOB04810_tw0qow.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294419/11-JOB04481_ek2zts.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294416/59-JOB04780_naz35h.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294315/58-JOB04769_qqknn1.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294300/53-JOB04744_sdtkur.jpg",
+
+    "",
   ],
 
-  otonan: ["assets/images/otonan/1.jpg", "assets/images/otonan/2.jpg"],
+  ngaben: [
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293629/22-JOB09314_rwfgmv.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293629/25-JOB00432_tk50oi.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293630/49-JOB00007_bidkuo.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293634/62-JOB00214_u4kqjk.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293640/15-JOB09164_xbbcoy.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293643/72-JOB00706_qizume.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293646/21-JOB09289_advkcv.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293647/25-JOB09334_f1ebpx.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293651/3-JOB00909_b6slb5.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772293652/35-JOB09580_e8bsrh.jpg",
+  ],
 
-  ngaben: ["assets/images/ngaben/1.jpg", "assets/images/ngaben/2.jpg"],
-
-  wisuda: ["assets/images/wisuda/1.jpg", "assets/images/wisuda/2.jpg"],
+  wisuda: [],
 };
 
 /* ===============================
@@ -74,10 +123,11 @@ function renderGallery() {
   const start = (currentPage - 1) * imagesPerPage;
   const end = start + imagesPerPage;
 
-  imageData[currentCategory].slice(start, end).forEach((src) => {
+  imageData[currentCategory].slice(start, end).forEach((url) => {
     const img = document.createElement("img");
-    img.src = src;
-    img.addEventListener("click", () => openModal(src));
+    img.src = url;
+    img.loading = "lazy";
+    img.addEventListener("click", () => openModal(url));
     grid.appendChild(img);
   });
 
