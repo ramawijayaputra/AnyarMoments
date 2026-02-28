@@ -82,16 +82,16 @@ const imageData = {
   ],
 
   wisuda: [
-    "https://res.cloudinary.com/dugp1yedh/image/f_auto,q_auto,w_1200/upload/v1772294940/65-JOB09015_vkezq7.jpg",
-    "https://res.cloudinary.com/dugp1yedh/image/f_auto,q_auto,w_1200/upload/v1772294935/19-JOB08474_iivzyl.jpg",
-    "https://res.cloudinary.com/dugp1yedh/image/f_auto,q_auto,w_1200/upload/v1772294934/2-JOB08317_le32xl.jpg",
-    "https://res.cloudinary.com/dugp1yedh/image/f_auto,q_auto,w_1200/upload/v1772294934/24-JOB08538_jrvg3l.jpg",
-    "https://res.cloudinary.com/dugp1yedh/image/f_auto,q_auto,w_1200/upload/v1772294932/23-JOB08533_mesmd3.jpg",
-    "https://res.cloudinary.com/dugp1yedh/image/f_auto,q_auto,w_1200/upload/v1772294933/67-JOB09031_wzfibu.jpg",
-    "https://res.cloudinary.com/dugp1yedh/image/f_auto,q_auto,w_1200/upload/v1772294932/9-JOB08367_mploqh.jpg",
-    "https://res.cloudinary.com/dugp1yedh/image/f_auto,q_auto,w_1200/upload/v1772294931/25-JOB08543_elk0io.jpg",
-    "https://res.cloudinary.com/dugp1yedh/image/f_auto,q_auto,w_1200/upload/v1772294929/60-JOB09000_bixr7v.jpg",
-    "https://res.cloudinary.com/dugp1yedh/image/f_auto,q_auto,w_1200/upload/v1772294928/26-JOB08573_drvhg0.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294940/65-JOB09015_vkezq7.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294935/19-JOB08474_iivzyl.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294934/2-JOB08317_le32xl.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294934/24-JOB08538_jrvg3l.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294932/23-JOB08533_mesmd3.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294933/67-JOB09031_wzfibu.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294932/9-JOB08367_mploqh.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294931/25-JOB08543_elk0io.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294929/60-JOB09000_bixr7v.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294928/26-JOB08573_drvhg0.jpg",
   ],
 };
 
