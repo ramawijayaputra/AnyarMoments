@@ -62,12 +62,10 @@ const imageData = {
     "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294422/47-JOB04683_gjxzj8.jpg",
     "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294421/27-JOB04564_etstxp.jpg",
     "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294419/64-JOB04810_tw0qow.jpg",
-    "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294419/11-JOB04481_ek2zts.jpg",
-    "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294416/59-JOB04780_naz35h.jpg",
-    "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294315/58-JOB04769_qqknn1.jpg",
-    "https://res.cloudinary.com/dugp1yedh/image/upload/v1772294300/53-JOB04744_sdtkur.jpg",
-
-    "",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294419/11-JOB04481_ek2zts.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294416/59-JOB04780_naz35h.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294315/58-JOB04769_qqknn1.jpg",
+    "https://res.cloudinary.com/dugp1yedh/image/upload/f_auto,q_auto,w_1200/v1772294300/53-JOB04744_sdtkur.jpg",
   ],
 
   ngaben: [
