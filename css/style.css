@@ -400,7 +400,12 @@ button {
   margin-bottom: 10vh;
   text-align: center;
 }
-
+@media (max-width: 768px) {
+  #portfolio h1 {
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+}
 .portfolio-wrapper {
   display: flex;
   width: 90%;
@@ -459,6 +464,47 @@ button {
 
 .slide.active {
   display: block;
+}
+
+/* ============================= */
+/* CATEGORY TAB STYLE */
+/* ============================= */
+
+.category-scroll {
+  position: relative;
+  display: flex;
+  gap: 35px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  scrollbar-width: none;
+}
+
+.category-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.category-scroll li {
+  flex: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #777;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.category-scroll li.active {
+  color: #d4af37;
+}
+
+/* 🔥 Animated Underline */
+.tab-indicator {
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  background: #d4af37;
+  border-radius: 2px;
+  transition: 0.35s ease;
 }
 
 /* GRID FOTO (SAMA SEPERTI YANG KITA BUAT SEBELUMNYA) */
